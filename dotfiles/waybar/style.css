@@ -1,0 +1,164 @@
+@import "mocha.css";
+
+* {
+    border: none;
+    border-radius: 10px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: @text;
+}
+
+#cpu, 
+#clock, 
+#custom-clipboard, 
+#custom-drawer-icon,
+#custom-emoji-picker,
+#custom-notif, 
+#idle_inhibitor,
+#battery, 
+#backlight, 
+#network, 
+#bluetooth, 
+#taskbar, 
+#wireplumber, 
+#workspaces, 
+#memory, 
+#disk, 
+#mpris, 
+#custom-music, 
+#tray, 
+#custom-player {
+    background: @base;
+    opacity: 1.0;
+    padding: 1.5px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 5px;
+}
+
+
+#workspaces {
+    background: #1e1e2e;
+}
+
+#workspaces button {
+    color: @overlay0;
+    margin: 0px 2px;
+    padding: 0px;
+    min-width: 24px;
+    background: transparent;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active { 
+    color: @base;
+    background: #89b4fa; 
+    border-radius: 6px;
+    margin: 0px 2px;
+}
+#workspaces button.focused {
+    color: @red;
+    background: #89b4fa; 
+    border-radius: 0px;
+    margin: 0px 2px;
+}
+
+#taskbar button.active {
+    background: @overlay1;   
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+#taskbar.empty {
+    opacity: 0;
+}
+
+/* CPU + Memory */
+#cpu {
+    margin-right: 0px;
+    border-radius: 5px 0px 0px 5px;
+}
+#memory {
+    margin-left: 0px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* Clipboard + Idle Inhibitor */
+#custom-drawer-icon {
+    margin-right: 0px;
+    border-radius: 5px 0px 0px 5px;
+}
+#custom-clipboard {
+    padding-right: 9px;    
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 0px 0px 0px 0px;
+}
+#custom-emoji-picker {
+   margin-left: 0px;
+   margin-right: 0px;
+   border-radius: 0px 0px 0px 0px; 
+   padding-right: 12px;
+}
+#idle_inhibitor {
+   padding-right: 10px;
+   margin-left: 0px;
+   margin-right: 0px;
+   border-radius: 0px 0px 0px 0px; 
+}
+
+/* Bluetooth + Network */
+#bluetooth {
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 0px 0px 0px 0px;
+    color: #89b4fa;
+}
+#network {
+    margin-left: 0px;
+    border-radius: 0px 5px 5px 0px;
+    color: #89b4fa;
+    padding-right: 15px;
+}
+
+/* Wireplumber + Backlight + Battery */
+#wireplumber {
+    margin-right: 0px;
+    border-radius: 5px 0px 0px 5px;
+}	
+#backlight {
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 0px;
+}
+#battery {
+    margin-left: 0px;
+    border-radius: 0px 5px 5px 0px;
+}
+#wireplumber, #backlight, #battery {
+    background: @base;
+    padding: 1.5px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#custom-notif {
+    padding-right: 10px;
+}
+
+
+tooltip {
+    background: @base;
+    border-radius: 7px;
+    border: 1px solid @base;   /*#8aadf4;*/
+    padding: 5px;
+}
+

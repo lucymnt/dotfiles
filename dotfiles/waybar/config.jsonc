@@ -1,0 +1,235 @@
+{
+  "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 36,
+    "margin-top": 5,
+    "margin-bottom": -2,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 0,
+
+    "modules-left": [
+        //"cpu",
+        //"memory",
+        //"disk"
+        "ext/workspaces",
+        "wlr/taskbar"
+    ],
+    "modules-center": [
+	"mpris"
+        //"custom/music"
+    ],
+    "modules-right": [
+        "tray",	  
+	"group/misc",
+       // "custom/clipboard",
+       //	"idle_inhibitor",
+        "bluetooth",
+        "network",
+        "wireplumber",
+        "backlight",
+        "battery",
+        "clock",
+        "custom/notif"
+    ],
+
+    /* --- Left Modules --- */
+
+    "cpu": {
+        "interval": 1,
+        "format": "<span color='#89b4fa'>  </span> {usage}%"
+    },
+
+    "memory": {
+        "interval": 3,
+        "format": "<span color='#f38ba8'></span> {used:0.1f}G"
+    },
+
+    "disk": {
+        "interval": 3,
+        "path": "/home",
+        "format": "<span color='#a6e3a1'></span> {free}GB"
+    },
+
+    "ext/workspaces": {
+        "format": "<span size='10pt'>{icon}</span>",
+        "on-click": "activate",
+        "format-icons": {
+	  "1": "1",
+          "2": "2",
+          "3": "3",
+      	  "4": "4",
+          "5": "5",
+          "6": "6",
+          "7": "7",
+          "8": "8",
+          "9": "9",
+        }
+    },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 18,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close"
+    },
+
+    /* --- Center Modules --- */
+
+    "custom/music": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "lizzy",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "on-click-middle": "playerctl previous"
+    },
+
+    "mpris": {
+        "format": "{player_icon} {artist} - {title}",
+        "format-paused": "{status_icon} {artist} - {title}",
+        "tooltip-format": "{album}",
+        "player-icons": {
+          "default": "⏸"
+        },
+        "status-icons": {
+          "paused": "▶"
+        },
+        "ignored-players": ["firefox", "kdeconnect"]
+    },
+
+    /* --- Right Modules --- */
+
+    "group/misc": {
+        "drawer": {
+	  "transition-left-to-right": true,
+	  "click-to-reveal": false
+	},
+	"orientation": "horizontal",
+	"modules": [
+	  "custom/drawer-icon",
+	  "custom/clipboard",
+	  "custom/emoji-picker",
+	  "idle_inhibitor"
+	]
+    },
+	  
+	
+    "custom/drawer-icon": {
+        "format": ""
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+          "activated": "<span color='#f9e2af'>󰅶</span>",
+          "deactivated": "󰾪"
+        }
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+
+    "custom/clipboard": {
+        "format": "",
+	"tooltip": false,
+        "on-click": "foot --app-id=waybar_clipboard clipse"
+    },
+
+    "custom/emoji-picker": {
+        "format": "",
+	"tooltip": false,
+	"on-click": "rofi -modi emoji -show emoji -emoji-mode copy"
+    },
+
+    "bluetooth": {
+        "format": "",
+        "format-off": "󰂲",
+        "format-connected": "󰂱",
+        "tooltip-format": "{device_enumerate}",
+        "on-click": "foot --app-id=waybar_bluetooth bluetui"
+    },
+
+    "network": {
+        "format-wifi": "{icon}",
+	"format-disabled": "󰤮",
+        "format-disconnected": "󰤭",
+        "format-icons": [
+	  "󰤯", // Lowest
+	  "󰤟",
+	  "󰤢",
+	  "󰤥",
+	  "󰤥" // Highest
+	],
+        "tooltip-format": "{essid} {signalStrength}%",
+        "on-click": "foot --app-id=waybar_network impala" 
+    },
+
+    "wireplumber": {
+        "format": "<span color='#a6e3a1'>{icon}</span> {volume}%",
+        "format-muted": "<span color='#f38ba8'>󰝟</span> {volume}%",
+        "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+	"on-click-right": "foot --app-id=waybar_audio_mixer wiremix",
+        "format-icons": ["", "", ""]
+    },
+
+    "backlight": {
+        "format": "<span color='#f9e2af'>󰃠</span> {percent}%",
+	"tooltip": false
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": "<span color='#cba6f7'>󰂄</span> {capacity}%",
+        "format-icons": [
+	    "󰂎", // 0
+	    "󰁺", // 10
+            "󰁻", // 20
+            "󰁼", // 30
+            "󰁽", // 40
+            "󰁾", // 50
+            "󰁿", // 60
+            "󰂀", // 70
+            "󰂁", // 80
+            "󰂂", // 90
+            "󰁹"  // 100
+	],
+    },
+
+    "clock": {
+        "interval": 1,
+        "format": "<span color='#cdd6f4'>{:%I:%M %p}</span>",
+        "format-alt": "<span color='#cdd6f4'>{:%r}</span>",
+        "tooltip-format": "<big><span color='#cdd6f4'>{:%Y %B}</span></big><tt><small>{calendar}</small></tt>",
+	"calendar": {
+          "mode": "month",
+          "weeks-pos": "right",
+          "on-scroll": 1,
+          "format": {
+            "months": "",
+            "days": "<span color='#a6adc8'>{}</span>",
+            "weekdays": "<span color='#bac2de'><b>{}</b></span>",
+            "today": "<span color='#89b4fa'><b><u>{}</u></b></span>", 
+          }
+        }
+    },
+    "actions":  {
+        "on-click-right": "mode",
+        "on-scroll-up":   "shift_up",
+        "on-scroll-down": "shift_down"
+    },
+
+    "custom/notif": {
+        "format": "",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "return-type": "json"
+    },
+}
