@@ -10,7 +10,7 @@
        recursive = true;
      };
      ".config/zsh/" = {
-       source = ../dotfiles/zsh/zshrc;
+       source = ../dotfiles/zsh;
        recursive = true;
      };
      ".config/waybar/" = {
@@ -23,6 +23,10 @@
      };
      ".config/rofi/" = {
        source = ../dotfiles/rofi;
+       recursive = true;
+     };
+     ".config/swaync/" = {
+       source = ../dotfiles/swaync;
        recursive = true;
      };
    }; 

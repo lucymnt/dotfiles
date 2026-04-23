@@ -1,12 +1,13 @@
 {
   imports = [
     ./dotfiles.nix
-    ./app-defaults.nix
+    ./services.nix
+    ./apps.nix
     ./oh-my-posh.nix
     ./themes.nix
-   # ./nix-flatpak.nix
     ./programs/zen.nix
-    ./waybar.nix
-    ./spicetify.nix
+    ./programs/waybar.nix
+    ./programs/spicetify.nix
+    ./programs/PathOfTitans.nix
    ];
 }

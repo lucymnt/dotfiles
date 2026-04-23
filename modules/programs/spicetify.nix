@@ -6,6 +6,7 @@ in {
     enable = true;
     enabledExtensions = with spicePkgs.extensions; [
       shuffle
+      spicyLyrics
     ];
     theme = spicePkgs.themes.catppuccin;
     colorScheme = "mocha";

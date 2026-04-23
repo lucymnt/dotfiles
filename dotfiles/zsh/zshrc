@@ -103,4 +103,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #export PATH=$PATH:/home/lucyst/.local/bin
-#eval "$(oh-my-posh init zsh --config ../catppuccin_mocha.omp.json)"
+#eval "$(oh-my-posh init zsh --config ../catppuccin_mocha.omp.json)"export GTK_THEME="rose-pine"
+export GTK_THEME="rose-pine"
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"

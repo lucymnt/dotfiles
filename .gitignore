@@ -1,9 +1,7 @@
-# Nix build artifacts
 result
 result-*
 .direnv/
 
-# Secrets — never commit these!
 secrets.nix
 *.age
 *.pem

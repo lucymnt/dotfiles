@@ -21,7 +21,6 @@
       settings = {
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         "zen.theme.enabled" = false;
-        "zen.theme.useSystemTheme" = "#c6a0f6";  
       };
     };
   };

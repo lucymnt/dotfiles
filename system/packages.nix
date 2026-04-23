@@ -1,40 +1,24 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    zsh
     intel-gpu-tools
     catppuccin-sddm
     catppuccin-cursors
-    vim
-    neovim
-    cava
-    oh-my-zsh
-    oh-my-posh
-    wget
-    foot
-    fastfetch
-    git
-    unzip
-    unrar
-    btop
+    hicolor-icon-theme
+    papirus-icon-theme
+    adwaita-icon-theme
     brightnessctl
     brillo
-    bluetui
-    wiremix
-    bat
-    tree
-    wev
-    vlc
-    prismlauncher
-    gapless
-    playerctl
+    git
+    wget
+    unzip
+    unrar
     lshw
-    xdg-desktop-portal-wlr
-    kdePackages.polkit-kde-agent-1
-    kdePackages.xdg-desktop-portal-kde
+    wev
+    steam-run
+    polkit_gnome
     kdePackages.dolphin
     kdePackages.ark
-    kdePackages.dolphin-plugins
     kdePackages.qt6ct
     kdePackages.plasma-integration
     kdePackages.kservice
@@ -45,15 +29,14 @@
     kdePackages.kguiaddons
     kdePackages.kio-extras
     kdePackages.gwenview
-    hypridle
-    hyprlock
-    satty
-    grim
-    slurp
-    rofi
-    rofi-emoji
-    impala
-    clipse
-    swaybg
+    glib
+    gsettings-desktop-schemas
   ];
+  programs.steam = {
+    enable = true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
+  };
 }
+  
