@@ -29,6 +29,10 @@
        source = ../dotfiles/swaync;
        recursive = true;
      };
+     ".config/veila/" = {
+       source = ../dotfiles/veila;
+       recursive = true;
+     };
    }; 
    programs.zsh.dotDir = config.home.homeDirectory;
 }

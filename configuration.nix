@@ -8,7 +8,7 @@
     ./system/nvidia.nix
     ./system/display.nix
     ./system/networking.nix
-    ./system/suspend.nix
+   # ./system/suspend.nix
     ./system/locale.nix
   ];
   boot.loader.limine.enable = true;

@@ -30,6 +30,10 @@
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    veila = {
+      url = "github:naurissteins/Veila";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, mango, dolphin-overlay, nix-flatpak, catppuccin, ... }@inputs: {
@@ -40,6 +44,7 @@
         ./configuration.nix
         mango.nixosModules.mango
         home-manager.nixosModules.home-manager
+        inputs.veila.nixosModules.default
         catppuccin.nixosModules.catppuccin
         {
           home-manager = {

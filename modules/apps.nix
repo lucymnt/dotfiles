@@ -38,7 +38,6 @@
      "org.vinegarhq.Sober"
      "com.github.tchx84.Flatseal"
    ];
-   programs.hyprlock.enable = true;
    xdg = {
      enable = true;
      mimeApps = {

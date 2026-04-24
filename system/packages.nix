@@ -8,7 +8,6 @@
     papirus-icon-theme
     adwaita-icon-theme
     brightnessctl
-    brillo
     git
     wget
     unzip
@@ -32,6 +31,7 @@
     glib
     gsettings-desktop-schemas
   ];
+  programs.veila.enable = true;
   programs.steam = {
     enable = true;
     extraCompatPackages = with pkgs; [
