@@ -10,11 +10,11 @@
     extraPortals = [
       pkgs.xdg-desktop-portal-wlr
       pkgs.kdePackages.xdg-desktop-portal-kde
+      pkgs.xdg-desktop-portal-gtk
     ];
     config = {
-      wlroots = {
-        default = [ "wlr" "kde" ];
-        };
-      };
+      common.default = [ "wlr" "kde" ];
+      common."org.freedesktop.impl.portal.Settings" = [ "gtk" ];
     };
+  };
 }
