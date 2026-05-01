@@ -30,6 +30,11 @@
      obs-studio
      prismlauncher
      stremio-linux-shell
+     libreoffice
+     lazygit
+     picard
+     kid3
+     eartag
      (import ../pkgs/alderon-games-launcher.nix { inherit pkgs; })
      (import ../pkgs/hayase.nix { inherit pkgs; })
      (import ../pkgs/helium-browser.nix { inherit pkgs; })
