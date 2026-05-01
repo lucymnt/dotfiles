@@ -95,7 +95,7 @@
         "format-paused": "{status_icon} {artist} - {title}",
         "tooltip-format": "{album}",
         "player-icons": {
-          "default": "⏸"
+          "default": ""
         },
         "status-icons": {
           "paused": "▶"

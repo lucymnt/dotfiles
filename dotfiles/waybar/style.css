@@ -44,6 +44,11 @@ window#waybar {
     border-radius: 5px;
 }
 
+#mpris {
+    padding: 0px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 #workspaces {
     background: #1e1e2e;
