@@ -9,5 +9,6 @@
     ./programs/waybar.nix
     ./programs/spicetify.nix
     ./programs/PathOfTitans.nix
+    ./programs/PrismLauncher.nix
    ];
 }

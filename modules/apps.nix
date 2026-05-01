@@ -37,6 +37,7 @@
    services.flatpak.packages = [
      "org.vinegarhq.Sober"
      "com.github.tchx84.Flatseal"
+     "io.github.astralvixen.geforce-infinity"
    ];
    xdg = {
      enable = true;
