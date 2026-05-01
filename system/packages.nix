@@ -31,6 +31,7 @@
     glib
     gsettings-desktop-schemas
   ];
+  programs.localsend.enable = true;
   programs.veila.enable = true;
   programs.steam = {
     enable = true;
