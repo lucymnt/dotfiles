@@ -207,10 +207,10 @@
         "interval": 1,
         "format": "<span color='#cdd6f4'>{:%I:%M %p}</span>",
         "format-alt": "<span color='#cdd6f4'>{:%r}</span>",
-        "tooltip-format": "<big><span color='#cdd6f4'>{:%Y %B}</span></big><tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<big><span color='#cdd6f4'>{:%B %Y}</span></big><tt><small>{calendar}</small></tt>",
 	"calendar": {
           "mode": "month",
-          "weeks-pos": "right",
+          "weeks-pos": "",
           "on-scroll": 1,
           "format": {
             "months": "",
