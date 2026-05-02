@@ -35,6 +35,9 @@
      picard
      kid3
      eartag
+     wayfreeze
+     qt6Packages.qt6ct
+     darkly
      (import ../pkgs/alderon-games-launcher.nix { inherit pkgs; })
      (import ../pkgs/hayase.nix { inherit pkgs; })
      (import ../pkgs/helium-browser.nix { inherit pkgs; })
