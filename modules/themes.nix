@@ -62,6 +62,7 @@ in
 
       [Colors:View]
       BackgroundNormal=30,30,46
+      BackgroundAlternate=36,36,54
       ForegroundNormal=205,214,244
 
       [Colors:Window]
