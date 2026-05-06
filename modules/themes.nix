@@ -36,6 +36,7 @@ in
   };
   home.sessionVariables = {
     GIO_EXTRA_MODULES = "${pkgs.dconf.lib}/lib/gio/modules:${pkgs.gvfs}/lib/gio/modules";
+    SAL_USE_VCLPLUGIN = "kf6";
   };
   xdg.configFile = {
     "gtk-4.0/gtk.css".source = "${roseGtk}/share/themes/${themeName}/gtk-4.0/gtk.css";
