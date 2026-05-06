@@ -55,8 +55,43 @@ in
       [General]
       ColorScheme=CatppuccinMochaMauve
       TerminalApplication=foot
-      [UiSettings]
-      ColorScheme=CatppuccinMochaMauve
+
+      [Colors:Button]
+      BackgroundNormal=49,50,68
+      ForegroundNormal=205,214,244
+
+      [Colors:View]
+      BackgroundNormal=30,30,46
+      ForegroundNormal=205,214,244
+
+      [Colors:Window]
+      BackgroundNormal=24,24,37
+      ForegroundNormal=205,214,244
+
+      [Colors:Selection]
+      BackgroundNormal=203,166,247
+      ForegroundNormal=17,17,27
+
+      [Colors:Tooltip]
+      BackgroundNormal=30,30,46
+      ForegroundNormal=205,214,244
+
+      [Colors:Header]
+      BackgroundNormal=24,24,37
+      ForegroundNormal=205,214,244
+
+      [Colors:Complementary]
+      BackgroundNormal=24,24,37
+      ForegroundNormal=205,214,244
+
+      [WM]
+      activeBackground=30,30,46
+      activeForeground=205,214,244
+      inactiveBackground=17,17,27
+      inactiveForeground=166,173,200
+
+      [KDE]
+      contrast=4
     '';
   };
   xdg.dataFile = {
