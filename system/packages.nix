@@ -18,7 +18,6 @@
     polkit_gnome
     kdePackages.dolphin
     kdePackages.ark
-    kdePackages.qt6ct
     kdePackages.plasma-integration
     kdePackages.kservice
     kdePackages.kconfig

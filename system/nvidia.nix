@@ -37,6 +37,5 @@
     GBM_BACKEND = "nvidia-drm";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
     WLR_DRM_NO_ATOMIC = "1";
-    QT_QPA_PLATFORMTHEME = "qt6ct";
   };
 }
