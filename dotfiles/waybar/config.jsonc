@@ -158,6 +158,7 @@
     },
 
     "network": {
+	"format": "{icon}",
         "format-wifi": "{icon}",
 	"format-disabled": "󰤮",
         "format-disconnected": "󰤭",
