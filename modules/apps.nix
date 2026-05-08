@@ -30,6 +30,7 @@
      obs-studio
      prismlauncher
      stremio-linux-shell
+     suwayomi-server
      libreoffice
      lazygit
      picard
@@ -37,6 +38,7 @@
      eartag
      wayfreeze
      darkly
+     faugus-launcher
      (import ../pkgs/alderon-games-launcher.nix { inherit pkgs; })
      (import ../pkgs/hayase.nix { inherit pkgs; })
      (import ../pkgs/helium-browser.nix { inherit pkgs; })
