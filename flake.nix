@@ -55,6 +55,7 @@
               imports = [
                 ./home.nix
                 catppuccin.homeModules.catppuccin
+                mango.hmModules.mango
               ];
             };
             extraSpecialArgs = { inherit inputs; };
