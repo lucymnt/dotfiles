@@ -20,4 +20,8 @@
     size = 24;
   };
   services.flatpak.enable = true;
+  wayland.windowManager.mango = {
+    enable = true;
+    systemd.enable = true;
+  };
 }
