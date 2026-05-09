@@ -31,7 +31,6 @@ in
     "org/gnome/desktop/interface" = {
       gtk-theme = themeName;
       icon-theme = "Papirus-Dark";
-      color-scheme = "prefer-dark";
     };
   };
   home.sessionVariables = {
