@@ -34,9 +34,13 @@
       url = "github:naurissteins/Veila";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    lazyvim = {
+      url = "github:pfassina/lazyvim-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, mango, dolphin-overlay, nix-flatpak, catppuccin, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, mango, dolphin-overlay, nix-flatpak, catppuccin, lazyvim, ... }@inputs: {
     nixosConfigurations.mango-nix = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
@@ -55,6 +59,7 @@
               imports = [
                 ./home.nix
                 catppuccin.homeModules.catppuccin
+                lazyvim.homeManagerModules.default
                 mango.hmModules.mango
               ];
             };

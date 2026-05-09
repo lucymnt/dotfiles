@@ -43,6 +43,7 @@
      (import ../pkgs/hayase.nix { inherit pkgs; })
      (import ../pkgs/helium-browser.nix { inherit pkgs; })
    ];
+   programs.lazyvim.enable = true;
    services.flatpak.packages = [
      "org.vinegarhq.Sober"
      "com.github.tchx84.Flatseal"
