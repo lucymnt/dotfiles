@@ -6,7 +6,6 @@
      xdg-utils
      shared-mime-info
      foot
-     vlc
      btop
      bat
      cava
@@ -39,6 +38,7 @@
      wayfreeze
      darkly
      faugus-launcher
+     haruna
      (import ../pkgs/alderon-games-launcher.nix { inherit pkgs; })
      (import ../pkgs/hayase.nix { inherit pkgs; })
      (import ../pkgs/helium-browser.nix { inherit pkgs; })
