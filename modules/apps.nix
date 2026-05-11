@@ -30,7 +30,7 @@
      prismlauncher
      stremio-linux-shell
      suwayomi-server
-     libreoffice
+     libreoffice-qt
      lazygit
      picard
      kid3
