@@ -15,4 +15,50 @@ valign = "center"
 x = 0
 y = 0
 z = 0
-
+[[visuals.backdrop]]
+enabled = true
+name = "now_playing"
+show_when = "now_playing"
+mode = "blur"
+color = "rgba(255, 255, 255, 0.05)"
+blur_strength = 12
+radius = 10
+border_color = "#FFFFFF18"
+width = 400
+height = 60
+halign = "center"
+valign = "bottom"
+x = 0
+y = -40
+z = 1
+[visuals.now_playing.title]
+width = 318
+color = "rgba(255, 255, 255, 0.69)"
+font_family = "Google Sans Flex"
+font_size = 16
+font_weight = 400
+halign = "left"
+valign = "bottom"
+x = 65
+y = -10
+relative_to = "now_playing"
+[visuals.now_playing.artist]
+width = 318
+color = "rgba(255, 255, 255, 0.39)"
+font_family = "Google Sans Flex"
+font_size = 16
+font_weight = 400
+halign = "left"
+valign = "top"
+x = 65
+y = 10
+relative_to = "now_playing"
+[visuals.now_playing.artwork]
+size = 44
+radius = 8
+opacity = 90
+halign = "left"
+valign = "center"
+x = 10
+y = 0
+relative_to = "now_playing"
