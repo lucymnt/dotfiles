@@ -3,13 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./system/core
-    ./system/packages.nix
-    ./system/nvidia.nix
-    ./system/display.nix
-    ./system/networking.nix
-   # ./system/suspend.nix
-    ./system/locale.nix
+    ./system
   ];
   boot.loader.limine.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
