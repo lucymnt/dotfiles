@@ -72,6 +72,9 @@
           nixpkgs.overlays = [ 
             dolphin-overlay.overlays.default
             (import ./pkgs/spotify.nix) 
+            (import ./pkgs/eden.nix)
+            (import ./pkgs/ryubing.nix)
+            (import ./pkgs/xwayland-satellite.nix)
           ];
         }
       ];
