@@ -29,6 +29,7 @@
     kdePackages.gwenview
     glib
     gsettings-desktop-schemas
+    xwayland-satellite
   ];
   programs.localsend.enable = true;
   programs.veila.enable = true;
