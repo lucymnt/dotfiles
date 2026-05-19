@@ -28,7 +28,6 @@
      gapless
      obs-studio
      prismlauncher
-     stremio-linux-shell
      suwayomi-server
      libreoffice-qt
      lazygit
@@ -39,6 +38,8 @@
      darkly
      faugus-launcher
      haruna
+     eden
+     ryubing
      (import ../pkgs/alderon-games-launcher.nix { inherit pkgs; })
      (import ../pkgs/hayase.nix { inherit pkgs; })
      (import ../pkgs/helium-browser.nix { inherit pkgs; })
@@ -47,6 +48,7 @@
    services.flatpak.packages = [
      "org.vinegarhq.Sober"
      "com.github.tchx84.Flatseal"
+     "com.stremio.Stremio"
      "io.github.astralvixen.geforce-infinity"
    ];
    xdg = {
