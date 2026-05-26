@@ -45,12 +45,15 @@
      (import ../pkgs/helium-browser.nix { inherit pkgs; })
    ];
    programs.lazyvim.enable = true;
-   services.flatpak.packages = [
-     "org.vinegarhq.Sober"
-     "com.github.tchx84.Flatseal"
-     "com.stremio.Stremio"
-     "io.github.astralvixen.geforce-infinity"
-   ];
+   services.flatpak = {
+     packages = [
+       "org.vinegarhq.Sober"
+       "com.github.tchx84.Flatseal"
+       "com.stremio.Stremio"
+       "io.github.astralvixen.geforce-infinity"
+     ];
+     update.onActivation = true;
+   };
    xdg = {
      enable = true;
      mimeApps = {
