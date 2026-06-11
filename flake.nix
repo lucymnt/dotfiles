@@ -18,10 +18,6 @@
     nix-flatpak = {
       url = "github:gmodena/nix-flatpak/?ref=latest";
     };
-    dolphin-overlay = {
-      url = "github:rumboon/dolphin-overlay";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     catppuccin = {
       url = "github:catppuccin/nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -40,7 +36,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, mango, dolphin-overlay, nix-flatpak, catppuccin, lazyvim, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, mango, nix-flatpak, catppuccin, lazyvim, ... }@inputs: {
     nixosConfigurations.mango-nix = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
@@ -70,11 +66,11 @@
           };
           programs.mango.enable = true;
           nixpkgs.overlays = [ 
-            dolphin-overlay.overlays.default
             (import ./pkgs/spotify.nix) 
             (import ./pkgs/eden.nix)
             (import ./pkgs/ryubing.nix)
             (import ./pkgs/xwayland-satellite.nix)
+            (import ./pkgs/dolphin.nix)
           ];
         }
       ];
