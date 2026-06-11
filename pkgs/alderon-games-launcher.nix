@@ -14,7 +14,8 @@ pkgs.stdenv.mkDerivation {
   installPhase = ''
     mkdir -p $out/bin
     makeWrapper ${pkgs.appimage-run}/bin/appimage-run $out/bin/${pname} \
-      --add-flags "${src}"
+      --add-flags "${src}" \
+      --set DISPLAY ":0"
     APPIMAGE_CONTENTS=${pkgs.appimageTools.extract { inherit pname version src; }}
     mkdir -p $out/share/icons/hicolor/256x256/apps
     cp -L "$APPIMAGE_CONTENTS/usr/share/icons/hicolor/256x256/apps/alderon-games-launcher.png" \
