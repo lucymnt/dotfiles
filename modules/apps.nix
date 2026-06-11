@@ -54,14 +54,5 @@
      ];
      update.onActivation = true;
    };
-   xdg = {
-     enable = true;
-     mimeApps = {
-       enable = true;
-       defaultApplications = {
-         "text/plain" = [ "vim.desktop" ];
-       };
-     };
-    };
 }
    
