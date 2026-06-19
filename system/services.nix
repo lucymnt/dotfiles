@@ -5,6 +5,7 @@
   programs.dconf.enable = true;
   services.flatpak.enable = true;
   security.polkit.enable = true;
+  services.tailscale.enable = true;
   xdg.portal = {
     enable = true;
     extraPortals = [
