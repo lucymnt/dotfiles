@@ -9,7 +9,5 @@
     ./programs/zen.nix
     ./programs/waybar.nix
     ./programs/spicetify.nix
-    ./programs/PathOfTitans.nix
-    ./programs/prismlauncher.nix
    ];
 }
