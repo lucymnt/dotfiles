@@ -41,8 +41,10 @@
      eden
      ryubing
      kdePackages.kdenlive
+     kdePackages.kate
      ffmpeg
      yt-dlp
+     ncdu
      (import ../pkgs/alderon-games-launcher.nix { inherit pkgs; })
      (import ../pkgs/hayase.nix { inherit pkgs; })
      (import ../pkgs/helium-browser.nix { inherit pkgs; })
