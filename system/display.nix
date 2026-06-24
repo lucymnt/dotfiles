@@ -4,8 +4,10 @@
   hardware.bluetooth.enable = true;
   services.upower.enable = true;
   services.power-profiles-daemon.enable = true;
-  services.logind.settings.Login.HandlePowerKey = "ignore";
-
+  services.logind.settings.Login = {
+    HandlePowerKey = "ignore";
+    HandleLidSwitch = "ignore";
+  };
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
