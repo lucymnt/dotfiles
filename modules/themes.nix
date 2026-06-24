@@ -33,6 +33,10 @@ in
       icon-theme = "Papirus-Dark";
     };
   };
+  catppuccin = {
+    enable = true; 
+    autoEnable = false;
+  };
   home.sessionVariables = {
     GIO_EXTRA_MODULES = "${pkgs.dconf.lib}/lib/gio/modules:${pkgs.gvfs}/lib/gio/modules";
     SAL_USE_VCLPLUGIN = "kf6";

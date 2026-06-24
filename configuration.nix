@@ -29,6 +29,10 @@
     ];
   };
   gtk.iconCache.enable = true;
-  catppuccin.limine.enable = true;
+  catppuccin = {
+    enable = true;
+    autoEnable = false;
+    limine.enable = true;
+  };
   system.stateVersion = "25.11";
 }
