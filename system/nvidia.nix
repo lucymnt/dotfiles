@@ -31,7 +31,6 @@
   services.xserver.videoDrivers = [ "nvidia" ];
 
   environment.variables = {
-    VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/nvidia_icd.json";
     NVD_BACKEND = "direct";
     WLR_NO_HARDWARE_CURSORS = "1";
     LIBVA_DRIVER_NAME = "nvidia";
