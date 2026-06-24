@@ -146,7 +146,7 @@
     "custom/emoji-picker": {
         "format": "",
 	"tooltip": false,
-	"on-click": "rofi -modi emoji -show emoji -emoji-mode copy"
+	"on-click": "rofimoji -a copy"
     },
 
     "bluetooth": {

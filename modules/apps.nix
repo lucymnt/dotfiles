@@ -14,7 +14,7 @@
      playerctl
      swaybg
      rofi
-     rofi-emoji
+     rofimoji
      wiremix
      bluetui
      impala
