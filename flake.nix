@@ -66,7 +66,6 @@
           };
           programs.mango.enable = true;
           nixpkgs.overlays = [ 
-            (import ./pkgs/spotify.nix) 
             (import ./pkgs/eden.nix)
             (import ./pkgs/ryubing.nix)
             (import ./pkgs/xwayland-satellite.nix)
