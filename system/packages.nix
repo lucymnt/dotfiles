@@ -30,6 +30,8 @@
     glib
     gsettings-desktop-schemas
     xwayland-satellite
+    vulkan-tools
+    vulkan-loader
   ];
   programs.localsend.enable = true;
   programs.veila.enable = true;
