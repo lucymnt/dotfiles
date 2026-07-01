@@ -9,5 +9,6 @@
     ./shell.nix
     ./services.nix
     ./drivers.nix 
+    ./waydroid.nix
   ];
 }
