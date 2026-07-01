@@ -33,6 +33,10 @@
        source = ../dotfiles/veila;
        recursive = true;
      };
+     "Pictures/Wallpapers/" = {
+       source = ../dotfiles/Wallpapers;
+       recursive = true;
+     };
    }; 
    programs.zsh.dotDir = config.home.homeDirectory;
 }
