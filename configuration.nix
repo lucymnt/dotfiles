@@ -35,4 +35,9 @@
     limine.enable = true;
   };
   system.stateVersion = "25.11";
+  fileSystems."/mnt/data" = {
+    device = "/dev/disk/by-label/nixdd";
+    fsType = "ext4";
+    options = [ "defaults" "nofail" ];
+  };
 }
