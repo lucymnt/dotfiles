@@ -32,9 +32,12 @@
     xwayland-satellite
     vulkan-tools
     vulkan-loader
+    exfatprogs
   ];
   programs.localsend.enable = true;
+  programs.partition-manager.enable = true;
   programs.veila.enable = true;
+  programs.gamemode.enable = true;
   programs.steam = {
     enable = true;
     extraCompatPackages = with pkgs; [
