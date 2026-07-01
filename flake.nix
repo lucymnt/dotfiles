@@ -70,6 +70,7 @@
             (import ./pkgs/ryubing.nix)
             (import ./pkgs/xwayland-satellite.nix)
             (import ./pkgs/dolphin.nix)
+            (import ./pkgs/faugus.nix)
           ];
         }
       ];
