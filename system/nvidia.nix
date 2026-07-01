@@ -17,8 +17,7 @@
     package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
     modesetting.enable = true;
     open = false;
-    powerManagement.enable = false;
-    powerManagement.finegrained = false;
+    powerManagement.enable = true;
     dynamicBoost.enable = false;
     nvidiaSettings = true;
     prime = {
